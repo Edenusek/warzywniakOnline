@@ -1,0 +1,65 @@
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2rem
+}
+.header {
+  text-align: center;
+  padding: 2rem;
+}
+.boxBoxes {
+    width: 20rem;height: 30rem;
+}
+.premium {
+  background-image: url("../img/premiumKoszyk.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 30rem;
+  width: 20rem;
+  margin: 10px;
+}
+.sport {
+  background-image: url("../img/sportKoszyk.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 30rem;
+  width: 20rem;
+  margin: 10px;
+}
+.fruits {
+  background-image: url("../img/owoceKoszyk.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 30rem;
+  width: 20rem;
+  margin: 10px;
+}
+.standard {
+  background-image: url("../img/standardKoszyk.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 30rem;
+  width: 20rem;
+  margin: 10px;
+}
+.keto {
+  background-image: url("../img/ketoKoszyk.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 30rem;
+  width: 20rem;
+  margin: 10px;
+}
+.resistance {
+  background-image: url("../img/odpornosckoszyk.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 30rem;
+  width: 20rem;
+  margin: 10px;
+}
+.centerBtn {
+  display: flex;
+  text-align: center;
+}

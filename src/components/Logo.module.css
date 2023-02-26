@@ -1,0 +1,9 @@
+.logo {
+    margin: 1rem;
+    color: #f2f2f2;
+    font-size: 34px;
+} 
+
+.logo a:hover {
+    text-decoration: none;
+}

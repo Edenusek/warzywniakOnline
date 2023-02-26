@@ -1,0 +1,17 @@
+.btn {
+    padding: 0.5rem 1rem;
+    background-color: #e4891a;
+    color: #f2f2f2;
+    border-radius: 1rem;
+    border: solid 0.1rem black;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #e4792a;
+  }
+  
+  /* .btnBox {
+    padding-top: 10rem;
+  } */

@@ -1,0 +1,40 @@
+.inst {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.instBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #f2f2f2; */
+  margin-top: 10rem;
+  width: 20rem;
+  height: 20rem;
+}
+
+.imgBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a751b;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+}
+
+.img {
+  font-size: 2rem;
+  color: #f2f2f2;
+}
+.inst p {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.inst span {
+  font-size: 16px;
+}
