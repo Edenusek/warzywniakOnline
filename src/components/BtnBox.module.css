@@ -6,6 +6,7 @@
     border: solid 0.1rem black;
     cursor: pointer;
     text-decoration: none;
+    text-transform: uppercase;
   }
   
   .btn:hover {

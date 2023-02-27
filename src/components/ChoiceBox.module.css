@@ -1,23 +1,23 @@
 .all {
-  /* height: 100%;
-  /* max-height: 100%; */
-  /* width: 100vw;
-  max-width: 100%; */ 
   background-color: #f2f2f2;
-}
-
-.box {
-  display: flex;
-  justify-content: space-evenly;
-  
 }
 .header {
   text-align: center;
   padding: 2rem;
 }
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 60%;
+}
 .boxBoxes {
-  /* width: 20rem; */
-  /* height: 30rem; */
+  margin-top: 5px;
+  text-align: center;
+  height: 40rem;
+  border: solid 1px black;
+  border-radius: 1rem;
 }
 .premium {
   background-image: url("../img/premiumKoszyk.jpg");
@@ -67,9 +67,7 @@
   width: 20rem;
   margin: 10px;
 }
-.centerBtn {
+.centerBox {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 12rem;
+  justify-content: space-evenly;
 }

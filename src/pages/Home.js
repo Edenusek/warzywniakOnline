@@ -4,6 +4,7 @@ import Also from "../components/Also";
 import BtnBox from "../components/BtnBox";
 import ChoiceBox from "../components/ChoiceBox";
 import Instruction from "../components/Instruction";
+import WhyWorth from "../components/WhyWorth";
 import vegetable from "../img/warzywa.jpg";
 import AboutPage from "./About";
 import classes from "./Home.module.css";
@@ -21,8 +22,11 @@ const HomePage = () => {
 
       <AboutPage />
       <Instruction />
+      <WhyWorth/>
       <ChoiceBox />
-      {/* <Also/> */}
+     <div>
+     <Also/>
+     </div>
     </Fragment>
   );
 };
