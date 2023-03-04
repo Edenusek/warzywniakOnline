@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import ShopPage from "../pages/Shop";
-import Logo from "./Logo";
+import { NavLink } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
 
 const MainNavigation = () => {
@@ -9,20 +7,20 @@ const MainNavigation = () => {
     <header className={classes.nav}>
       <nav>
         <ul>
-          <Link to="/" className={classes.logo}>
+          <NavLink to=".." className={classes.logo}>
             Pan Jarzynka
-          </Link>
+          </NavLink>
           <li>
-            <Link to="/shop">Sklep</Link>
+            <NavLink to="/shop">Sklep</NavLink>
           </li>
           <li>
-            <Link to="/forCompany">Oferta dla Firm</Link>
+            <NavLink to="/forCompany">Oferta dla Firm</NavLink>
           </li>
           <li>
-            <Link to="/about">O Nas</Link>
+            <NavLink to="/about">O Nas</NavLink>
           </li>
           <li>
-            <Link to="/contact">Kontakt</Link>
+            <NavLink to="/contact">Kontakt</NavLink>
           </li>
         </ul>
       </nav>

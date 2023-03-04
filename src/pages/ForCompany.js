@@ -1,9 +1,11 @@
 import React, { Fragment } from "react";
 import BtnBox from "../components/BtnBox";
+import Footer from "../components/Footer";
 import classes from "./ForCompany.module.css";
 
 const ForCompanyPage = (props) => {
   return (
+    <Fragment>
     <div className={classes.flex}>
     <div className={classes.box} >
       <h1>Już w krótce!</h1>
@@ -17,6 +19,8 @@ const ForCompanyPage = (props) => {
     </div >
       </div>
     </div>
+    <Footer/>
+    </Fragment>
   );
 };
 

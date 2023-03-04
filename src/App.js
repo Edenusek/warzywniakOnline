@@ -5,6 +5,7 @@ import ForCompanyPage from "./pages/ForCompany";
 import HomePage from "./pages/Home";
 import RootLayout from "./pages/Root";
 import ShopPage from "./pages/Shop";
+import classes from './App.module.css'
 
 const router = createBrowserRouter([
   { 
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div>
+    <div className={classes.box} >
       <RouterProvider router={router}></RouterProvider>
     </div>
   );

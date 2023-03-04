@@ -1,0 +1,29 @@
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;/* max-width: 60%; */
+}
+
+.box textarea {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    min-width: 40rem;
+    max-width: 40rem;
+    min-height: 20rem;
+    max-height: 20rem;
+    border-radius: 1rem;
+    border: solid 1px black;
+}
+
+.box input {
+    min-height: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: solid 1px black;
+}
+
+.inputsBox {
+display: flex;
+flex-direction: column;
+}

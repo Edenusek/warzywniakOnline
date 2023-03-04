@@ -31,7 +31,7 @@ const ChoiceBox = () => {
         <div className={classes.boxBoxes}>
           <div className={classes.fruits}></div>
           <span>Owoce</span>
-          <h3>Box Owoce</h3>
+          <h3>Box Owoc</h3>
           <p>100 zł</p>
 
           <BtnBox btn="Dodaj do koszyka" />

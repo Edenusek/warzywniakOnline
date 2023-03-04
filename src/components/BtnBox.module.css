@@ -1,3 +1,6 @@
+.btnBox {
+  padding: 1rem 2rem ;
+}
 .btn {
     padding: 0.5rem 1rem;
     background-color: #e4891a;
@@ -13,6 +16,4 @@
     background-color: #e4792a;
   }
   
-  /* .btnBox {
-    padding-top: 10rem;
-  } */
+ 
