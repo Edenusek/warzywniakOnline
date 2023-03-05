@@ -1,27 +1,24 @@
 import React from 'react'
 import classes from './Footer.module.css'
 import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import {  } from '@fortawesome/free-solid-svg-icons'
 
-// const facebook = <FontAwesomeIcon icon={faBook} />
 
 const Footer = () => {
   return (
     <div className={classes.box} >
-        <Link to='/'><p>Pan Jarzynka</p></Link>
-        <div className={classes.color} >
-            <Link>FaceBook</Link>
-            <Link>Instagram</Link>
+        <Link to='/'><h2>Pan Jarzynka</h2></Link>
+        <div >
+            <a href='https://www.facebook.com/'>Facebook</a>
+            <a href='https://www.instagram.com/'>Instagram</a>
         </div>
-        <ul>
-            <li> <a href='/shop'>Sklep</a></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <p>Działa to</p>
+        <div>
+             <Link to='/shop'  >Sklep</Link>
+             <a>Regulamin</a>
+             <a>Polityka Prywatności</a>
+             <Link to='/contact' >Kontakt</Link> 
+            
+        </div>
+       
     </div>
   )
 }

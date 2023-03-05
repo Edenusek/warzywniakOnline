@@ -1,24 +1,30 @@
 .box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 40rem;
-  background-color: dark;
+  justify-content: space-around;
+  height: 15rem;
+  width: 100vw;
+  max-width: 100%;
+  background-color: #3A751B;
   color: black;
-}
-.box ul {
-    list-style: none;
-    color:black;
-}
-.box li {
-    text-decoration: none;
-    color: black;
-}
-.box a {
-    color: black;
+ 
 }
 
-.color {
-  color: black;
+.box a {
+  padding: 0 1rem ;
+  text-decoration: none;
+  color: black;  
+  cursor: pointer;
 }
+.box a:hover {
+  color: #60BB30;
+}
+/* .box a:fokus{
+  text-decoration: none;
+} */
+.box div {
+  padding: .5rem 0;
+}
+
+
