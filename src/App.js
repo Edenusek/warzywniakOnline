@@ -5,6 +5,8 @@ import ForCompanyPage from "./pages/ForCompany";
 import HomePage from "./pages/Home";
 import RootLayout from "./pages/Root";
 import ShopPage from "./pages/Shop";
+import Regulations from './pages/Regulations'
+import PrivatePolitics from "./pages/PrivatePolitics";
 import classes from "./App.module.css";
 
 const router = createBrowserRouter([
@@ -17,6 +19,8 @@ const router = createBrowserRouter([
       { path: "/forCompany", element: <ForCompanyPage /> },
       { path: "/about", element: <AboutPage /> },
       { path: "/contact", element: <ContactPage /> },
+      { path: '/regulations', element: <Regulations/> },
+      { path: '/privatePolitics', element: <PrivatePolitics/>}
     ],
   },
 ]);

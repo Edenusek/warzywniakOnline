@@ -3,28 +3,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 15rem;
+  height: 12rem;
   width: 100vw;
   max-width: 100%;
-  background-color: #3A751B;
+  background-color: #3a751b;
   color: black;
- 
 }
 
 .box a {
-  padding: 0 1rem ;
+  margin: .5rem;
   text-decoration: none;
-  color: black;  
   cursor: pointer;
 }
 .box a:hover {
-  color: #60BB30;
+  color: #60bb30;
 }
-/* .box a:fokus{
-  text-decoration: none;
-} */
-.box div {
-  padding: .5rem 0;
-}
-
 

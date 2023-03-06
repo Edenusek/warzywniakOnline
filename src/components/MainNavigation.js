@@ -3,24 +3,46 @@ import { NavLink } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
 
 const MainNavigation = () => {
+  let activeStyle = {
+    color: '#60bb30',
+  };
+
+  let activeClassName = "underline";
+
   return (
     <header className={classes.nav}>
       <nav>
         <ul>
           <NavLink to=".." className={classes.logo}>
-            Pan Jarzynka
+            Cebula Celestyna
           </NavLink>
           <li>
-            <NavLink to="/shop">Sklep</NavLink>
+            <NavLink
+              to="/shop"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}>
+              Sklep
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/forCompany">Oferta dla Firm</NavLink>
+            <NavLink
+              to="/forCompany"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}>
+              Oferta dla Firm
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/about">O Nas</NavLink>
+            <NavLink
+              to="/about"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}>
+              O Nas
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/contact">Kontakt</NavLink>
+            <NavLink
+              to="/contact"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}>
+              Kontakt
+            </NavLink>
           </li>
         </ul>
       </nav>
