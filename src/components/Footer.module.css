@@ -16,6 +16,16 @@
   cursor: pointer;
 }
 .box a:hover {
-  color: #60bb30;
+  color: black;
+}
+
+.icons {
+  padding: .8rem;
+  font-size: 28px;
+  color: black;
+}
+
+.icons:hover {
+  color: #f2f2f2f2;
 }
 

@@ -38,3 +38,15 @@
 .inst span {
   font-size: 16px;
 }
+
+.box1{
+  animation-name: box1;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes box1 {
+  from{left:-500px}
+  to{left:0px}
+}

@@ -6,6 +6,7 @@ import { faBagShopping } from '@fortawesome/free-solid-svg-icons'
 import { faBoxesStacked } from '@fortawesome/free-solid-svg-icons'
 import { faGift } from '@fortawesome/free-solid-svg-icons'
 
+
 const bagShopping = <FontAwesomeIcon className={classes.img} icon={faBagShopping} />
 const boxesStacked = <FontAwesomeIcon className={classes.img} icon={faBoxesStacked}/>
 const giftBox = <FontAwesomeIcon className={classes.img} icon={faGift}/>
@@ -14,7 +15,7 @@ const Instruction = () => {
   return (
     <div className={classes.inst}>
         <div className={classes.instBox}>
-      <div className={classes.imgBox}>
+      <div className={`${classes.imgBox} ${classes.box1}`}>
       {boxesStacked}
         </div>  
             <p>Wybierz Boxa</p>

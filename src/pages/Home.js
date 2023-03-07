@@ -15,7 +15,9 @@ const HomePage = () => {
     <Fragment>
       <div className={classes.img}>
         <div className={classes.flex}>
-          <h1>Zamów!</h1>
+          <div className={classes.animationBox}>
+          <h1 className={classes.orderAnimation} >Zamów!</h1>
+          </div>
 
           <span>Skrzynka świeżych warzyw i owoców prosto pod Twoje drzwi</span>
           <p>Z Polskich pól, od Polskich rolników</p>
