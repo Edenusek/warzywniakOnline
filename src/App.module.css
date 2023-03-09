@@ -2,3 +2,22 @@
     
     overflow: hidden;
 }
+
+.box h1 {
+    font-family: 'Marck Script', cursive;
+    font-size: 46px;
+}
+.box h2 {
+    font-family: 'Marck Script', cursive;
+    font-size: 30px;
+    font-weight: normal;
+
+}
+
+.box span,p{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+}
+
+.box p, span {
+}

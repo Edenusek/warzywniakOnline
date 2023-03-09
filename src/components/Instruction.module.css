@@ -39,14 +39,68 @@
   font-size: 16px;
 }
 
-.box1{
-  animation-name: box1;
+.box {
+  /* animation-name: box1;
   animation-duration: 1s;
   animation-timing-function: ease;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
+  animation: box 0.6s ease-in-out forwards;
 }
 
-@keyframes box1 {
-  from{left:-500px}
-  to{left:0px}
+.box2 {
+  animation: box2 .6s ease-in-out .6s forwards;
+}
+.box3 {
+  animation: box3 .6s ease-in-out 1.2s forwards;
+}
+
+@keyframes box  {
+  /* 0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  } */
+ from {
+  transform: scaleX(0);
+ }
+ to{
+  transform: scaleX(100%);
+ }
+
+
+}
+@keyframes box2 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+ /* from {
+  transform: scaleX(0);
+  z-index: -1;
+ }
+ to{
+  transform: scaleX(100%);
+  
+ } */
+
+
+}
+@keyframes box3 {
+  /* 0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  } */
+ from {
+  transform: scaleX(0);
+ }
+ to{
+  transform: scaleX(100%);
+ }
+
+
 }

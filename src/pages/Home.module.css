@@ -5,10 +5,10 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
-  
 }
 
 .img {
+  position: relative;
   background-image: url(../img/warzywa.jpg);
   width: 100vw;
   max-width: 100%;
@@ -19,27 +19,20 @@
   overflow: hidden;
 }
 
-.flex p {
-  margin-bottom: 10rem;
-}
-
 .flex h1 {
-  position: relative;
-  padding: 1rem;
-  min-height: 4rem;
-  
+  position: absolute;
 }
 
 .animationBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 5rem;
+  min-width: 50%;
 }
 
 .orderAnimation {
-  animation-name: order;
-  animation-duration: 1s;
-  transition-property: font-size;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
+  animation: order 1s ease forwards;
 }
 
 @keyframes order {
@@ -47,6 +40,6 @@
     font-size: 8px;
   }
   to {
-    font-size: 40px;
+    font-size: 50px;
   }
 }

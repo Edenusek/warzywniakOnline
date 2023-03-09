@@ -4,6 +4,7 @@
   overflow: hidden;
   width: 100vw;
   max-width: 100%;
+  z-index: 100;
   
 }
 
@@ -15,6 +16,7 @@
   list-style: none;
   font-size: 20px;
   background-color: #3a751b;
+  min-height: 6rem;
 }
     
 
@@ -30,8 +32,8 @@ nav a:hover {
 
 .logo {
     font-size: 34px;
-    margin: 1rem;
-    text-decoration: none;
+    /* padding: 1rem; */
+    /* text-decoration: none; */
 }
 
 .logo a:hover {

@@ -15,23 +15,23 @@ const WhyWorth = () => {
       <div className={classes.iconBox}>
         <div>
         <FontAwesomeIcon className={classes.icon} icon="coffee" />
-          <p>Wygoda</p>
+          <h2>Wygoda</h2>
         </div>
         <div>
         <FontAwesomeIcon className={classes.icon} icon="clock" />
-          <p>Oszczędność czasu</p>
+          <h2>Oszczędność czasu</h2>
         </div>
         <div>
         <FontAwesomeIcon className={classes.icon} icon="carrot" />
-          <p>Świeże warzywa i owoce</p>
+          <h2>Świeże warzywa i owoce</h2>
         </div>
         <div>
         <FontAwesomeIcon className={classes.icon} icon="truck-fast" />
-          <p>Szybka dostawa</p>
+          <h2>Szybka dostawa</h2>
         </div>
         <div>
         <FontAwesomeIcon className={classes.icon} icon="box" />
-          <p>Zabezpieczona przesyłka</p>
+          <h2>Zabezpieczona przesyłka</h2>
         </div>
       </div>
     </div>

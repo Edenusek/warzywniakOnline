@@ -13,7 +13,7 @@ const MainNavigation = () => {
     <header className={classes.nav}>
       <nav>
         <ul>
-          <NavLink to=".." className={classes.logo}>
+          <NavLink to="/" className={classes.logo}>
             Cebula Celestyna
           </NavLink>
           <li>

@@ -19,7 +19,7 @@ const HomePage = () => {
           <h1 className={classes.orderAnimation} >Zamów!</h1>
           </div>
 
-          <span>Skrzynka świeżych warzyw i owoców prosto pod Twoje drzwi</span>
+          <p>Skrzynka świeżych warzyw i owoców prosto pod Twoje drzwi</p>
           <p>Z Polskich pól, od Polskich rolników</p>
 
           <BtnBox path="./shop" btn="ZOBACZ SKRZYNKI" />

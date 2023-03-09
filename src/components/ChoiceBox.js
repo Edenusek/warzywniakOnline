@@ -6,7 +6,7 @@ import classes from "./ChoiceBox.module.css";
 const ChoiceBox = () => {
   return (
     <div className={classes.all}>
-      <h2 className={classes.header}>Wybierz swój box!</h2>
+      <h1 className={classes.header}>Wybierz swój box!</h1>
       <div className={classes.centerBox} >
       <div className={classes.box}>
         
