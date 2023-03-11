@@ -8,6 +8,7 @@ import ShopPage from "./pages/Shop";
 import Regulations from './pages/Regulations'
 import PrivatePolitics from "./pages/PrivatePolitics";
 import classes from "./App.module.css";
+import BasketPage from "./pages/Basket";
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,8 @@ const router = createBrowserRouter([
       { path: "/about", element: <AboutPage /> },
       { path: "/contact", element: <ContactPage /> },
       { path: '/regulations', element: <Regulations/> },
-      { path: '/privatePolitics', element: <PrivatePolitics/>}
+      { path: '/privatePolitics', element: <PrivatePolitics/>},
+      {path: '/basket', element: <BasketPage/>}
     ],
   },
 ]);

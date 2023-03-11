@@ -7,8 +7,9 @@ import ChoiceBox from "../components/ChoiceBox";
 import Footer from "../components/Footer";
 import Instruction from "../components/Instruction";
 import WhyWorth from "../components/WhyWorth";
-import vegetable from "../img/warzywa.jpg";
-import AboutPage from "./About";
+
+
+
 import classes from "./Home.module.css";
 const HomePage = () => {
   return (

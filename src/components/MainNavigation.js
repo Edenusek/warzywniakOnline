@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
+import Onion from '../img/onion.png'
 
 const MainNavigation = () => {
   let activeStyle = {
@@ -14,7 +15,7 @@ const MainNavigation = () => {
       <nav>
         <ul>
           <NavLink to="/" className={classes.logo}>
-            Cebula Celestyna
+          <div className={classes.center} ><img src={Onion} ></img>  Cebula Celestyna</div>
           </NavLink>
           <li>
             <NavLink

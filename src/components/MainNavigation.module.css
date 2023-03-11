@@ -1,11 +1,10 @@
 .nav {
- overflow: hidden;
+  overflow: hidden;
   position: fixed;
   overflow: hidden;
   width: 100vw;
   max-width: 100%;
   z-index: 100;
-  
 }
 
 .nav ul {
@@ -18,7 +17,6 @@
   background-color: #3a751b;
   min-height: 6rem;
 }
-    
 
 nav a:link,
 a:visited {
@@ -27,15 +25,25 @@ a:visited {
 }
 
 nav a:hover {
-  color: #60BB30;
+  color: #60bb30;
 }
 
 .logo {
-    font-size: 34px;
-    /* padding: 1rem; */
-    /* text-decoration: none; */
+  font-size: 34px;
+  /* padding: 1rem; */
+  /* text-decoration: none; */
 }
 
 .logo a:hover {
-    color: #f2f2f2f2
+  color: #f2f2f2f2;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.center img {
+  margin: 0 1rem;
 }

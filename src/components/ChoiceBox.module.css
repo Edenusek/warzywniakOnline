@@ -13,6 +13,8 @@
   width: 60%;
 }
 .boxBoxes {
+  display: flex;
+  flex-direction: column;
   margin-top: 2rem;
   text-align: center;
   height: 42rem;
@@ -20,13 +22,19 @@
   border-radius: 1rem;
   background-color: #fff;
 }
-.premium {
-  background-image: url("../img/premiumKoszyk.jpg");
+.boxBoxes img {
+  /* background-image: url("../img/premiumKoszyk.jpg"); */
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 30rem;
   width: 20rem;
   margin: 10px;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.boxBoxes img:hover{
+  transform: scale(1.2);
 }
 .sport {
   background-image: url("../img/sportKoszyk.jpg");

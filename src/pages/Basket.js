@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import Footer from '../components/Footer'
 
 const BasketPage = () => {
   return (
-    <div>BasketPage</div>
+    <Fragment>
+      <div></div>
+      <div></div>
+<Footer/>
+    </Fragment>
   )
 }
 

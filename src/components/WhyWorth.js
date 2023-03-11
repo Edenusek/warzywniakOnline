@@ -2,7 +2,6 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from "@fortawesome/fontawesome-svg-core";
 import classes from './WhyWorth.module.css'
-import { } from "@fortawesome/free-solid-svg-icons";
 import { faCheckSquare, faCoffee, faClock, faCarrot, faTruckFast, faBox } from '@fortawesome/free-solid-svg-icons'
 
 library.add( faCheckSquare, faCoffee, faClock, faCarrot, faTruckFast, faBox )
