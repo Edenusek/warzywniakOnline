@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react'
 import Footer from '../components/Footer'
+import OrderForm from '../components/OrderForm'
 
 const BasketPage = () => {
   return (
     <Fragment>
-      <div></div>
-      <div></div>
+      <OrderForm/>
 <Footer/>
     </Fragment>
   )

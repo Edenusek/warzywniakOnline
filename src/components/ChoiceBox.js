@@ -25,7 +25,7 @@ console.log(e.target.id)
 
           <span>{box.name}</span>
           <h3>{box.boxName}</h3>
-          <p>{box.price}</p>
+          <p>{box.price} zł </p>
 
           <BtnBox click={addHandler} btn="Dodaj do koszyka" />
         </div>

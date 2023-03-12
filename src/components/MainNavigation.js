@@ -1,11 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { BsBasket } from "react-icons/bs";
 import classes from "./MainNavigation.module.css";
-import Onion from '../img/onion.png'
+import Onion from "../img/onion.png";
 
 const MainNavigation = () => {
   let activeStyle = {
-    color: '#60bb30',
+    color: "#60bb30",
   };
 
   let activeClassName = "underline";
@@ -15,7 +16,9 @@ const MainNavigation = () => {
       <nav>
         <ul>
           <NavLink to="/" className={classes.logo}>
-          <div className={classes.center} ><img src={Onion} ></img>  Cebula Celestyna</div>
+            <div className={`${classes.center} ${classes.logo}`}>
+              <img src={Onion}></img>Cebula Celestyna
+            </div>
           </NavLink>
           <li>
             <NavLink
@@ -45,6 +48,12 @@ const MainNavigation = () => {
               Kontakt
             </NavLink>
           </li>
+          <div className={classes.basket}>
+            <Link to="/basket">
+              <BsBasket />
+            </Link>
+            <p>1 produkt(y)</p>
+          </div>
         </ul>
       </nav>
     </header>
