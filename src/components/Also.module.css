@@ -1,5 +1,4 @@
 .box {
-  margin-top: 1rem;
   width: 100vw;
   max-width: 100%;
   height: 15rem;
@@ -7,7 +6,6 @@
   background-image: url('../img/warzywatlo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
- 
   z-index: 0;
   
 }

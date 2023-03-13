@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
-    max-height: 100%;
-    overflow: hidden;
+    height: 80vh;
+    max-height: 80%;
+    /* overflow: hidden; */
     
   }
   .box {
-    padding-top: 20rem;
+    padding-top: 10rem;
     text-align: center ;
   }
 

@@ -3,41 +3,61 @@
   display: flex;
   height: 100vh;
   max-height: 100%;
-  
 }
 
-.formBox{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    padding: 2rem;
-    /* gap: 10px; */
+.formBox {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 4rem;
 }
 .inputName {
-    display: flex;
-    padding-bottom: 1rem;
-    gap: 4.4rem;
-    
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  width: 51%;
 }
 
 .inputName input {
-    width: 12rem;
+  width: 12rem;
 }
 
 .inputOrder {
-    display: flex;
-    flex-direction: column;
-    gap: .8rem;
-   
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 .inputOrder input {
-    width: 50%;
+  width: 50%;
 }
 
-.basketBox{
-    padding: 2rem;
+.redStar {
+  color: red;
 }
 
-.basket{
-    display: flex;
+.basketBox {
+  padding: 4rem;
+}
+
+.basket {
+  display: flex;
+}
+
+.prod {
+  width: 70%;
+}
+
+.boxName {
+  width: 50%;
+}
+.boxAmount {
+  width: 20%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 0.5rem 0; 
 }
