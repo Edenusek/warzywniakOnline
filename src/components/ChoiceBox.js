@@ -1,9 +1,8 @@
 import React from "react";
-import BtnBox from "./BtnBox";
+import Button from "../components/UI/Button";
 import Boxes from '../store/ProductData'
 import classes from "./ChoiceBox.module.css";
-import premium from '../img/premiumKoszyk.jpg'
-import sport from '../img/sportKoszyk.jpg'
+
 
 const ChoiceBox = () => {
 
@@ -14,7 +13,8 @@ console.log(e.target.id)
   console.log(Boxes[1].img)
 
   return (
-    <div className={classes.all}>
+   <form onSubmit={addHandler}>
+     <div className={classes.all}>
       <h1 className={classes.header}>Wybierz swój box!</h1>
       <div className={classes.centerBox} >
       <div className={classes.box}>
@@ -27,8 +27,9 @@ console.log(e.target.id)
           <h3>{box.boxName}</h3>
           <p>{box.price} zł </p>
 
-          <BtnBox click={addHandler} btn="Dodaj do koszyka" />
+          <Button onClick={addHandler}  >dodaj do koszyka</Button>
         </div>
+   
         ))}
         
        
@@ -36,6 +37,7 @@ console.log(e.target.id)
     </div>
       </div>
     </div>
+    </form>
   );
 };
 

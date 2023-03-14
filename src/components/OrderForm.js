@@ -1,8 +1,13 @@
 import React, { Fragment } from "react";
-import BtnBox from './BtnBox'
+import Button from "./UI/Button";
 import classes from "./OrderForm.module.css";
 
 const OrderForm = () => {
+
+const orderHandler = () => {
+  console.log('działam')
+}
+
   return (
     <Fragment>
       <form>
@@ -11,11 +16,15 @@ const OrderForm = () => {
             <h3>Adres zamawiającego</h3>
             <div className={classes.inputName}>
               <div>
-                <label htmlFor="name">Imię<span className={classes.redStar} >*</span> </label>
+                <label htmlFor="name">
+                  Imię<span className={classes.redStar}>*</span>{" "}
+                </label>
                 <input type="text" id="name" />
               </div>
               <div>
-                <label htmlFor="surname">Nazwisko<span className={classes.redStar} >*</span> </label>
+                <label htmlFor="surname">
+                  Nazwisko<span className={classes.redStar}>*</span>{" "}
+                </label>
                 <input type="text" id="surname" />
               </div>
             </div>
@@ -24,22 +33,38 @@ const OrderForm = () => {
               <input type="text" id="company" />
               <label htmlFor="nip">NIP</label>
               <input type="number" id="nip" />
-              <label htmlFor="email">E-mail<span className={classes.redStar} >*</span></label>
+              <label htmlFor="email">
+                E-mail<span className={classes.redStar}>*</span>
+              </label>
               <input type="email" id="email" />
-              <label htmlFor="phone">Telefon<span className={classes.redStar} >*</span></label>
+              <label htmlFor="phone">
+                Telefon<span className={classes.redStar}>*</span>
+              </label>
               <input type="number" id="phone" />
-              <label htmlFor="street">Ulica<span className={classes.redStar} >*</span></label>
+              <label htmlFor="street">
+                Ulica<span className={classes.redStar}>*</span>
+              </label>
               <input type="text" id="street" />
-              <label htmlFor="houseNumber">Nr domu/mieszkanie<span className={classes.redStar} >*</span></label>
+              <label htmlFor="houseNumber">
+                Nr domu/mieszkanie<span className={classes.redStar}>*</span>
+              </label>
               <input type="number" id="houseNumber" />
-              <label htmlFor="city">Miasto<span className={classes.redStar} >*</span></label>
+              <label htmlFor="city">
+                Miasto<span className={classes.redStar}>*</span>
+              </label>
               <input type="text" id="city" />
-              <label htmlFor="country">Kraj<span className={classes.redStar} >*</span></label>
+              <label htmlFor="country">
+                Kraj<span className={classes.redStar}>*</span>
+              </label>
               <input type="text" id="country" />
-              <label htmlFor="postCode">Kod pocztowy<span className={classes.redStar} >*</span></label>
+              <label htmlFor="postCode">
+                Kod pocztowy<span className={classes.redStar}>*</span>
+              </label>
               <input type="number" id="postCode" />
             </div>
-      <div className={classes.btn} ><BtnBox btn='zamów' /></div>
+            <div className={classes.btn}>
+              <Button onClick={orderHandler} >zamów</Button>
+            </div>
           </div>
 
           <div className={classes.basketBox}>

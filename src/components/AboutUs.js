@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
-import BtnBox from "../components/BtnBox";
+import Button from "../components/UI/Button";
 import classes from "./AboutUs.module.css";
+import MyLink from "./UI/MyLink";
 
 const AboutUs = () => {
   return (
@@ -19,7 +20,7 @@ const AboutUs = () => {
 
          
         </div>
-          <BtnBox path="./shop" btn="zobacz skrzynki" />
+          <MyLink path="./shop" name="zobacz skrzynki" />
       </div>
     </Fragment>
   );

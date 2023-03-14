@@ -1,8 +1,7 @@
 import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
 import AboutUs from "../components/AboutUs";
 import Also from "../components/Also";
-import BtnBox from "../components/BtnBox";
+import Button from "../components/UI/Button";
 import ChoiceBox from "../components/ChoiceBox";
 import Footer from "../components/Footer";
 import Instruction from "../components/Instruction";
@@ -11,6 +10,7 @@ import WhyWorth from "../components/WhyWorth";
 
 
 import classes from "./Home.module.css";
+import MyLink from "../components/UI/MyLink";
 const HomePage = () => {
   return (
     <Fragment>
@@ -23,7 +23,7 @@ const HomePage = () => {
           <p>Skrzynka świeżych warzyw i owoców prosto pod Twoje drzwi</p>
           <p>Z Polskich pól, od Polskich rolników</p>
 
-          <BtnBox path="./shop" btn="ZOBACZ SKRZYNKI" />
+          <MyLink path="./shop" name="ZOBACZ SKRZYNKI" />
         </div>
       </div>
 
