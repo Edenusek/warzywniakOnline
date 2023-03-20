@@ -1,0 +1,31 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 4rem;
+}
+.inputName {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  width: 51%;
+}
+
+.inputName input {
+  width: 12rem;
+}
+
+.inputOrder {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.inputOrder input {
+  width: 50%;
+}
+
+.redStar {
+  color: red;
+}
+
+
