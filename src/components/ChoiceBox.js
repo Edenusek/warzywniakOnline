@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Button from "../components/UI/Button";
 import Boxes from "../store/ProductData";
 import BoxItemForm from "./Boxes/BoxItem/BoxItemForm";
 import classes from "./ChoiceBox.module.css";
@@ -7,18 +6,15 @@ import classes from "./ChoiceBox.module.css";
 const ChoiceBox = (props) => {
   const [cart, setCart] = useState([]);
 
-  const addToCart = (id) => {
-    const selectedBox = Boxes.find((box) => box.id === id);
+  const addToCart = (selectedBox) => {
     setCart([...cart, selectedBox]);
+    console.log(cart)
   };
 
-  const addHandler = (e) => {
-    e.preventDefault();
-    console.log(e.target);
-  };
+
 
   return (
-    <form onSubmit={addHandler}>
+    <form >
       <div className={classes.all}>
         <h1 className={classes.header}>Wybierz swój box!</h1>
         <div className={classes.centerBox}>
@@ -31,8 +27,8 @@ const ChoiceBox = (props) => {
                 <h3>{box.boxName}</h3>
                 <p>{box.price} zł </p>
 
-                <BoxItemForm />
-                {console.log(box.type)}
+                <BoxItemForm box={box} onAddToCart={addToCart} />
+                
               </li>
             ))}
           </ul>

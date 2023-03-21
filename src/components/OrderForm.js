@@ -5,16 +5,16 @@ import Cart from "./Cart/Cart";
 import ShippingDetails from "./Cart/ShippingDetails";
 
 const OrderForm = (props) => {
-  const orderHandler = () => {
-    console.log("działam");
-  };
+
+
+
 
   return (
     <Fragment>
       <div className={classes.wrapper}>
         <ShippingDetails />
 
-        <Cart />
+        <Cart  />
       </div>
     </Fragment>
   );
