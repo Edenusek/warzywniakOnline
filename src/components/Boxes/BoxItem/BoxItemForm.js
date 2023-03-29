@@ -9,7 +9,7 @@ const BoxItemForm = (props) => {
 
   return (
     <form>
-      <Button onClick={handleAddToCart} >dodaj do koszyka</Button>
+      <Button onAddToCart={handleAddToCart}>dodaj do koszyka</Button>
     </form>
   );
 };
