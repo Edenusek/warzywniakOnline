@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import AboutUs from '../components/AboutUs'
+import AboutUs from '../components/AboutUs/AboutUs'
 import Footer from '../components/Footer'
 
 const AboutPage = () => {

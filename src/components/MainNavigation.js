@@ -9,8 +9,6 @@ const MainNavigation = () => {
     color: "#60bb30",
   };
 
-  let activeClassName = "underline";
-
   return (
     <header className={classes.nav}>
       <nav>
@@ -49,9 +47,11 @@ const MainNavigation = () => {
             </NavLink>
           </li>
           <div className={classes.basket}>
-            <Link to="/basket">
+            <NavLink
+              to="/basket"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}>
               <BsBasket />
-            </Link>
+            </NavLink>
             <p>1 produkt(y)</p>
           </div>
         </ul>

@@ -1,0 +1,47 @@
+
+ { "boxes": [
+    {
+      "type": "Warzywa i owoce",
+      "boxName": "Box Premium",
+      "price": "150",
+      "img": "img/premiumKoszyk.jpg",
+      "id": "1"
+    },
+    {
+      "type": "Warzywa i owoce",
+      "boxName": "Box Sport",
+      "price": "140",
+      "img": "img/sportKoszyk.jpg",
+      "id": "2"
+    },
+    {
+      "type": "Warzywa i owoce",
+      "boxName": "Box Owoce",
+      "price": "100",
+      "img": "img/owoceKoszyk.jpg",
+      "id": "3"
+    },
+    {
+      "type": "Warzywa i owoce",
+      "boxName": "Box Standard",
+      "price": "120",
+      "img": "img/standardKoszyk.jpg",
+      "id": "4"
+    },
+    {
+      "type": "Warzywa i owoce",
+      "boxName": "Box Keto",
+      "price": "160",
+      "img": "img/ketoKoszyk.jpg",
+      "id": "5"
+    },
+    {
+      "type": "Warzywa i owoce",
+      "boxName": "Box Odporność",
+      "price": "130",
+      "img": "img/odpornosckoszyk.jpg",
+      "id": "6"
+    }
+  ]
+
+ }
