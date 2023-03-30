@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
-import Button from "../components/UI/Button";
+import Button from "../UI/Button";
 import classes from "./AboutUs.module.css";
-import MyLink from "./UI/MyLink";
+import MyLink from "../UI/MyLink";
 
 const AboutUs = () => {
   return (

@@ -3,11 +3,11 @@ import Button from "../UI/Button";
 
 import classes from "./Cart.module.css";
 
-const Cart = () => {
+const Cart = (props) => {
  
-  const addToCartHandler = (props) =>{
-    props.onAddToCart(props.item)
-  }
+  // const addToCartHandler = (props) =>{
+  //   props.onAddToCart(props.item)
+  // }
 
   return (
     <div className={classes.cartBox}>
@@ -24,10 +24,10 @@ const Cart = () => {
       </div>
       <div className={classes.basket}>
         <span className={classes.boxName}></span>{" "}
-        <span className={classes.boxAmount}>1 szt</span> <span> </span>
+        <span className={classes.boxAmount}>2 szt</span> <span> </span>
       </div>
       <div className={classes.btn}>
-        <Button>zamów</Button>
+        <Button >zamów</Button>
       </div>
     </div>
   );

@@ -23,7 +23,7 @@ const ChoiceBox = () => {
   })
   };
 
-
+  console.log("cart", cart);
 
   return (
     
@@ -42,3 +42,13 @@ const ChoiceBox = () => {
 };
 
 export default ChoiceBox;
+
+// export const boxesLoader = async () => {
+
+//   const res = await fetch("http://localhost:3500/boxes");
+
+//   const resData = await res.json()
+//   console.log(resData)
+
+//   return resData;
+// }
