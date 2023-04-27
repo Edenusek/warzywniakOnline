@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { BsBasket } from "react-icons/bs";
 import classes from "./MainNavigation.module.css";
 import Onion from "../img/onion.png";
+import CartContext from "./Context/CartContext";
 
 const MainNavigation = () => {
   let activeStyle = {
     color: "#60bb30",
   };
+
+  const {boxes} = useContext(CartContext)
+
+  const boxesLength = boxes.length
 
   return (
     <header className={classes.nav}>
@@ -52,7 +57,7 @@ const MainNavigation = () => {
               style={({ isActive }) => (isActive ? activeStyle : undefined)}>
               <BsBasket />
             </NavLink>
-            <p>1 produkt(y)</p>
+            <p>{boxesLength} produkt(y)</p>
           </div>
         </ul>
       </nav>

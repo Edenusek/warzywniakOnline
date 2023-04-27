@@ -1,18 +1,16 @@
 // komponent pojedyńczego box renderowany w ChoiceBox//
 
-import React from "react";
-
+import React, { useContext } from "react";
 import Button from "../../UI/Button";
+import classes from "./BoxItem.module.css";
+import CartContext from "../../Context/CartContext";
 
-import classes from './BoxItem.module.css'
+export const BoxItem = props => {
+  const { addBox } = useContext(CartContext);
 
-export const BoxItem = (props) => {
-
-    // const {box, onAddToCart} = props
-
-  const handleAddToCart = () => {
-    
-    props.onAddToCart(props.box);
+  const addHandleBox = () => {
+    addBox(props.box);
+    console.log(props.box);
   };
 
   return (
@@ -23,7 +21,7 @@ export const BoxItem = (props) => {
       <h3>{props.box.boxName}</h3>
       <p>{props.box.price} zł </p>
 
-      <Button box={props.box} onClick={handleAddToCart }>dodaj  do koszyka</Button>
+      <Button onClick={addHandleBox}>dodaj do koszyka</Button>
     </li>
   );
 };

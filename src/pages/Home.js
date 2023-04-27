@@ -5,15 +5,11 @@ import ChoiceBox from "../components/ChoiceBox";
 import Footer from "../components/Footer";
 import Instruction from "../components/Instruction";
 import WhyWorth from "../components/WhyWorth";
-import Basket from './Basket'
+import Basket from "./Basket";
 
 import classes from "./Home.module.css";
 import MyLink from "../components/UI/MyLink";
-import { CartProvider } from "../store/cart-context";
 const HomePage = () => {
-  const dataBoxes = useLoaderData();
-  console.log(dataBoxes);
-
   return (
     <Fragment>
       <div className={classes.img}>
@@ -33,7 +29,7 @@ const HomePage = () => {
       <Instruction />
       <WhyWorth />
       <ChoiceBox />
-      <Basket/>
+      <Basket />
       <Also />
       <Footer />
     </Fragment>
