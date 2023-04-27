@@ -29,7 +29,7 @@ const HomePage = () => {
       <Instruction />
       <WhyWorth />
       <ChoiceBox />
-      <Basket />
+      {/* <Basket /> */}
       <Also />
       <Footer />
     </Fragment>

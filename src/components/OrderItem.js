@@ -1,18 +1,23 @@
 import React, { useContext } from "react";
 import CartContext from "./Context/CartContext";
 
-const OrderItem = props => {
+import classes from './OrderItem.module.css'
+import Button from "./UI/Button";
+
+
+const OrderItem = ({box}) => {
   const { removeBox } = useContext(CartContext);
 
   const removeHandleBox = () => {
-    removeBox(props.box.id);
+    removeBox(box.id);
   };
 
   return (
-    <div>
-      <p>{props.box.boxName}</p>
-      <p>{props.box.price} zł</p>
-      <button onClick={removeHandleBox}>Usuń</button>
+    <div className={classes.box} >
+      <p> Nazwa: {box.boxName}</p>
+      <p>Cena: {box.price} zł</p>
+      <p> sztuk</p>
+      <Button onClick={removeHandleBox} >Usuń</Button>
     </div>
   );
 };

@@ -19,6 +19,8 @@ const CartState = (props) => {
     dispatch({type: REMOVE_ITEM, payload: id})
   }
 
+ 
+
   return (
     <CartContext.Provider value={{
       boxes: state.boxes,

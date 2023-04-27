@@ -1,6 +1,6 @@
 import React from "react";
 
-import classes from "./ShippingDetails.module.css";
+import classes from "./ShoppingDetails.module.css";
 
 const ShippingDetails = () => {
   return (

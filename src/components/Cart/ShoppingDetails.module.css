@@ -1,14 +1,14 @@
 .box {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 45%;
   padding: 4rem;
 }
 .inputName {
   display: flex;
   justify-content: space-between;
   padding-bottom: 1rem;
-  width: 51%;
+  width: 50%;
 }
 
 .inputName input {

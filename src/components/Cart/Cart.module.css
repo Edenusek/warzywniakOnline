@@ -1,27 +1,13 @@
 .cartBox {
- 
-    padding: 4rem;
-  }
-  
-  .cart {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 1rem 0;
-  }
-  
- 
-  
-  .boxName {
-    width: 50%;
-  }
-  .boxAmount {
-    width: 20%;
-  }
-  
-  .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem 0; 
-  }
+  padding: 4rem;
+  width: 50%;
+}
+
+
+
+/* .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+} */

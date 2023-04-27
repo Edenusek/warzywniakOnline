@@ -5,21 +5,21 @@ import Button from "../../UI/Button";
 import classes from "./BoxItem.module.css";
 import CartContext from "../../Context/CartContext";
 
-export const BoxItem = props => {
+export const BoxItem = ({box}) => {
   const { addBox } = useContext(CartContext);
 
   const addHandleBox = () => {
-    addBox(props.box);
-    console.log(props.box);
+    addBox(box);
+    
   };
 
   return (
-    <li key={props.box.id} className={classes.boxBoxes}>
-      <img src={props.box.img} alt={props.box.type} />
+    <li key={box.id} className={classes.boxBoxes}>
+      <img src={box.img} alt={box.type} />
 
-      <span>{props.box.type}</span>
-      <h3>{props.box.boxName}</h3>
-      <p>{props.box.price} zł </p>
+      <span>{box.type}</span>
+      <h3>{box.boxName}</h3>
+      <p>{box.price} zł </p>
 
       <Button onClick={addHandleBox}>dodaj do koszyka</Button>
     </li>

@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import Button from "./UI/Button";
 import classes from "./OrderForm.module.css";
 import Cart from "./Cart/Cart";
-import ShippingDetails from "./Cart/ShippingDetails";
+import ShippingDetails from "./Cart/ShoppingDetails";
 
 const OrderForm = (props) => {
 
