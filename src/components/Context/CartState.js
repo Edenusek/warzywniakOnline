@@ -6,13 +6,14 @@ import { ADD_ITEM, REMOVE_ITEM } from './Types'
 const CartState = (props) => {
 
   const initialState = {
-    boxes: []
+    items: [],
+    totalAmount: 0
   }
 
   const [state, dispatch] = useReducer(CartReducer, initialState)
 
-  const addBox = box => {
-    dispatch({type: ADD_ITEM, payload: box})
+  const addBox = item => {
+    dispatch({type: ADD_ITEM, payload: item})
   }
 
   const removeBox = id => {
@@ -23,7 +24,8 @@ const CartState = (props) => {
 
   return (
     <CartContext.Provider value={{
-      boxes: state.boxes,
+      items: state.items,
+      totalAmout: state.totalAmount,
       addBox,
       removeBox
     }}>

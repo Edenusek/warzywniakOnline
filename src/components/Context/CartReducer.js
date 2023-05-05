@@ -4,9 +4,11 @@ const CartReducer = (state, action) => {
   switch (action.type) {
     // kiedy ADD_ITEM dodaje obecny stan + action
     case ADD_ITEM: {
+      // const updatedTotalAmound = state.totalAmount + action.item.price * action.item.amount
       return {
         ...state,
-        boxes: [...state.boxes, action.payload],
+        items: [...state.items, action.payload],
+        // totalAmount: updatedTotalAmound
       };
     }
 
@@ -14,7 +16,7 @@ const CartReducer = (state, action) => {
     case REMOVE_ITEM: {
       return {
         ...state,
-        boxes: state.boxes.filter(box => box.id !== action.payload),
+        items: state.items.filter(item => item.id !== action.payload),
       };
     }
 

@@ -1,6 +1,25 @@
 .box {
-    display: flex;
+  display: flex;
 }
 .box p {
-    width: 25%;
+  width: 25%;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input input {
+    max-width: 1.5rem;
+   
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  
 }

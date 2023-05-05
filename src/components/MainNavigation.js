@@ -10,9 +10,9 @@ const MainNavigation = () => {
     color: "#60bb30",
   };
 
-  const {boxes} = useContext(CartContext)
+  const {items} = useContext(CartContext)
 
-  const boxesLength = boxes.length
+  const boxesLength = items.length
 
   return (
     <header className={classes.nav}>

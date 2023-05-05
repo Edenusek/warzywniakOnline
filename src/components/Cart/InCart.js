@@ -5,12 +5,12 @@ import classes from './InCart.module.css'
 
 const InCart = () => {
 
-    const { boxes } = useContext(CartContext)
+    const { items } = useContext(CartContext)
 
   return (
   <div className={classes.wrapper} >
   
-  {boxes.map(box => <OrderItem box={box}/> )}
+  {items.map(item => <OrderItem item={item}/> )}
   
 </div>
   )
